@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="The 54 lattice: every completed sentence is an act of intelligibility, forced by the resolution of three dimensions.">
+<title>The Holy Grail — The 54 Lattice</title>
+<style>
+:root{
+  --bg:#050608;
+  --text:#f7f8fb;
+  --muted:#aab2bd;
+  --line:rgba(255,255,255,.14);
+  --toward:#7dd3fc;
+  --across:#c4b5fd;
+  --away:#f9a8d4;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 14% 0%,rgba(125,211,252,.13),transparent 34rem),radial-gradient(circle at 84% 12%,rgba(196,181,253,.11),transparent 35rem),radial-gradient(circle at 50% 100%,rgba(249,168,212,.09),transparent 36rem),var(--bg)}
+main{min-height:100vh;display:grid;place-items:center;padding:clamp(24px,5vw,72px)}
+.shell{width:min(1120px,100%);border:1px solid var(--line);border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.018));box-shadow:0 30px 100px rgba(0,0,0,.48);overflow:hidden}
+.rule{height:5px;background:linear-gradient(90deg,var(--toward),var(--across),var(--away))}
+.content{padding:clamp(34px,7vw,92px)}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:760}
+h1{margin:.55em 0 0;font-size:clamp(54px,10vw,132px);line-height:.88;letter-spacing:-.065em;max-width:9ch}
+.lead{margin:clamp(28px,4vw,48px) 0 0;max-width:760px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(25px,3.6vw,46px);line-height:1.18;color:#edfaff}
+.statement{margin:clamp(30px,5vw,58px) 0 0;max-width:780px;padding-top:clamp(22px,3vw,34px);border-top:1px solid var(--line);font-size:clamp(18px,2.1vw,28px);line-height:1.5;color:#d1d7df}
+.statement strong{color:var(--text)}
+.axes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:clamp(30px,5vw,56px) 0 0}
+.axis{border:1px solid var(--line);border-radius:18px;padding:18px;background:rgba(255,255,255,.035)}
+.axis span{display:block;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.axis strong{font-size:clamp(18px,2vw,26px)}
+.axis:nth-child(1){box-shadow:inset 0 3px var(--toward)}
+.axis:nth-child(2){box-shadow:inset 0 3px var(--across)}
+.axis:nth-child(3){box-shadow:inset 0 3px var(--away)}
+.final{margin:clamp(28px,4vw,46px) 0 0;font-size:clamp(16px,1.6vw,21px);line-height:1.55;color:var(--muted);max-width:760px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(30px,5vw,52px)}
+a{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border-radius:14px;text-decoration:none;font-weight:760}
+.primary{background:var(--text);color:#090b0e}
+.primary:hover,.primary:focus-visible{background:#dfe4eb;outline:none}
+.secondary{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.04)}
+.secondary:hover,.secondary:focus-visible{background:rgba(255,255,255,.1);outline:none}
+@media(max-width:720px){main{padding:12px}.shell{border-radius:22px}.content{padding:30px 22px 34px}.axes{grid-template-columns:1fr}.actions{flex-direction:column}a{width:100%}}
+</style>
+</head>
+<body>
+<main>
+  <section class="shell" aria-labelledby="title">
+    <div class="rule"></div>
+    <div class="content">
+      <div class="eyebrow">The 54 lattice</div>
+      <h1 id="title">The Holy Grail</h1>
+      <p class="lead">A completed sentence is an act of intelligibility.</p>
+      <p class="statement">Every act of intelligibility resolves <strong>three dimensions at once</strong>. One operation, one orientation, and one terminal mode converge into one forced landing. The 54 positions are the complete set of those resolutions.</p>
+      <div class="axes" aria-label="The three dimensions">
+        <div class="axis"><span>Dimension one</span><strong>Operation</strong></div>
+        <div class="axis"><span>Dimension two</span><strong>Orientation</strong></div>
+        <div class="axis"><span>Dimension three</span><strong>Terminal mode</strong></div>
+      </div>
+      <p class="final">Each card shows one resolution. The name of the cell is not an added label. It is what those three coordinates force.</p>
+      <div class="actions">
+        <a class="primary" href="The%20Holy%20Grail.html">Enter the 54</a>
+        <a class="secondary" href="https://github.com/TitanicParker/the-holy-grail">View the repository</a>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
